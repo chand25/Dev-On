@@ -1,0 +1,49 @@
+nav{position: absolute;
+
+  width: 100%;
+  background-color: rgba(200, 50, 100, 1);
+  font-size: 25px;
+  font-family: 'Atomic Age', cursive;
+}
+
+
+ var aboutbkg = { backgroundImage: 'url("./assets/deskpen.jpg")' };
+nav ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+nav ul li{
+  list-style: none;
+}
+
+var aboutStyle = { backgroundImage: 'url("../assets/deskpen.jpg")' };
+
+.aboutBody{
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  background-size: cover;
+  /background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("./assets/deskpen.jpg")
+}
+background-image: url("./assets/deskpen.jpg");
+
+.aboutMe{
+  display: flex;
+}
+
+.innerStory{
+margin-left: 31%;
+margin-top: 8%;
+height:  33%;
+width: 33%;
+position: fixed;
+}
+
+Welcome to the Start of a Beautiful New Relationship.  Born and raised in New York City.
+                The diverse multi-ethnic culture of NY has always influenced me from a child.
+                Therefore, my approach to my work before web development has always been to find the
+                voice of a client so that it would be heard.  My projects are a representation of my ability to
+                not stick to a particular design or style.

@@ -1,0 +1,52 @@
+.rotateAbout{
+  margin-left: -3%;
+  margin-top: -10%;
+  transform:  rotate(-11deg);
+  top: 50%;
+  height:  33%;
+}
+
+.story{
+  transform:  rotate(-1.5deg);
+  margin-left: -12%;
+  line-height: 100%;
+  font-size: 3vh;
+  width: 45vw;
+  font-family: 'Lobster Two', cursive;}
+
+
+
+  .lastVerse{
+      width: 55vw;
+      transform:  rotate(-1.5deg);
+      margin-left: -10%;
+      line-height: 100%;
+      font-size: 3vh;
+      font-family: 'Lobster Two', cursive;
+  }
+
+/*for width smaller than 400px */
+.pagebkg{
+    background-image: url('./assets/mydesk.jpeg');
+  }
+
+/*for width 400px and larger */
+@media only screen and (min-width: 400px){
+  .pagebkg{
+    background-image: url('./assets/deskpen.jpg');
+  }
+}
+
+
+.aboutContainer{
+
+  }
+
+/*background-image: url('./assets/amonitor.jpeg');
+    background-position: center;
+*/
+
+.aboutMe{
+  margin-top: 20%;
+  margin-left: 35%
+}

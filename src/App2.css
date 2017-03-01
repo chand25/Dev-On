@@ -1,0 +1,220 @@
+html, body{
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+
+nav .widerscr{
+  font-family: 'Raleway Dots', cursive;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.maintitle{
+      color: rgba(250, 0, 0, .8);
+      font-size: 10vw;
+      text-align: center;
+      font-family: 'Codystar', cursive;
+      text-shadow: 2px 2px gold;
+      animation: flash 4s linear 2s infinite alternate;
+      }
+
+  @keyframes flash{
+    0%  {color: rgba(0,0,0,.8); text-shadow: 2px 2px red; }
+    25% {color: rgba(250,0,0,.8); text-shadow: 2px 2px gold; }
+    50% {color: rgba(0,0,0,.8); text-shadow: 2px 2px red; }
+    75% {color: rgba(250,0,0,.8); text-shadow: 2px 2px black; }
+    100% {color: rgba(0,0,0,.8); text-shadow: 2px 2px red; }
+  }
+
+
+
+.topnav:link {
+  color: silver;
+  text-decoration: none;
+}
+
+ /* footer visited link */
+ .topnav:visited {
+   color: silver;
+   text-decoration: none; }
+
+
+.App {
+  height: 100%;
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #223;
+  height: 20%;
+  color: white;
+}
+
+
+.pagebkg {
+     display: flex;
+      /*flex-flow: row wrap; */
+     /*position: absolute;*/
+     /*To support older browsers*/
+    height: 100%;
+    width: 100%;
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*for width smaller than 400px */
+.pagebkg{
+    background-image: url('./assets/mydesk.jpeg');
+  }
+
+/*for width 400px and larger */
+@media only screen and (min-width: 400px){
+  .pagebkg{
+    background-image: url('./assets/deskpen.jpg');
+  }
+}
+
+
+.aboutContainer{
+
+  }
+
+/*background-image: url('./assets/amonitor.jpeg');
+    background-position: center;
+*/
+
+.aboutMe{
+  margin-top: 20%;
+  margin-left: 35%
+}
+
+.innerStory h3 {
+   opacity:0.8;
+   font-weight: bold;
+   font-family: 'Raleway Dots', cursive;
+   /* text is in one line */
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: 1vh solid transparent;
+    -webkit-animation: typing 2s steps(30, end),
+                        blink-cursor 1s step-end;
+    -moz-animation: typing 2s steps(30, end),
+                        blink-cursor 1s step-end;
+  }
+
+.innerStory h4 {
+   opacity:0.8;
+   font-family: 'Raleway Dots', cursive;
+   white-space:nowrap;
+    overflow:hidden;
+    border-right: 1vh solid black;
+    -webkit-animation: typing 2s steps(40, end),
+                        blink-cursor 1s step-end infinite;
+    -webkit-animation-delay:2s;
+    -webkit-animation-fill-mode:both;
+    -moz-animation: typing 2s steps(40, end),
+                        blink-cursor 1s step-end infinite;
+    -moz-animation-delay:2s;
+    -moz-animation-fill-mode:both;
+}
+
+@-webkit-keyframes typing {
+    from { width: 0; }
+    to { width:100%; }
+}
+
+@-moz-keyframes typing {
+    from { width: 0; }
+    to { width:100%; }
+}
+
+@-webkit-keyframes blink-cursor {
+    0%, 100% { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-cursor {
+    0%, 100% { border-color: transparent }
+    50% { border-color: black }
+}
+
+.rotateAbout{
+  margin-left: -3%;
+  margin-top: -10%;
+  transform:  rotate(-11deg);
+  top: 50%;
+  height:  33%;
+}
+
+.poemTitle{
+  font-family: 'Raleway Dots', cursive;
+  margin-left: -55%;
+  margin-top: 25%;
+}
+
+.story{
+  transform:  rotate(-1.5deg);
+  margin-left: -12%;
+  line-height: 100%;
+  font-size: 3vh;
+  width: 45vw;
+  font-family: 'Lobster Two', cursive;}
+
+  .lastVerse{
+      width: 55vw;
+      transform:  rotate(-1.5deg);
+      margin-left: -10%;
+      line-height: 100%;
+      font-size: 3vh;
+      font-family: 'Lobster Two', cursive;
+  }
+
+.homeParallax {
+     /*position: absolute;*/
+     /*To support older browsers*/
+    height: 100%;
+    width: 100%;
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+    position: relative;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homecontent{
+  background-color: rgba(255, 255, 255, 1);
+  width: 100vw;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption span.insidepic {
+   font-family: 'Codystar', cursive;
+    background-color: #111;
+    color: white;
+    line-height: 12vh;
+    padding: 2vw;
+    font-size: 5vh;
+    letter-spacing: 10;
+}
+
+
