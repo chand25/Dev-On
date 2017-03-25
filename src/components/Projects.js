@@ -3,26 +3,31 @@ import MTK from '../assets/MTKscreenshot.png';
 import JCC from '../assets/JCCScreenshot.png';
 import Nite from '../assets/ScreenshotNiteOut.png';
 import Blog from '../assets/BlogScreenshot.png';
+import gallerybkg from '../assets/gallery.jpg';
+
+
+
 
 
 
 class Project extends Component {
   render() {
 
-
+let style = {
+    backgroundImage: `url(${gallerybkg})` };
     return (
 
 
-        //Responsive Materialize cards - categories under carousel -->
+        //Responsive Materialize cards -->
 
-<div className="projectcontainer">
+<div className="projectcontainer pagebkg" style={style}>
 <section className="projectcontent">
   <div className="row">
-      <div className="col s12 m12 l3">
+      <div className="col s12 m12 l4">
          <div className="card">
            <div className="card-image large">
              <img className="grow" src={MTK} alt="screenshot of memory game"/>
-             <span className="card-title newcolor">Match Two of a Kind</span>
+             <span className="card-title orange-text text-lighten-1 newcolor">Match Two of a Kind</span>
            </div>
            <div className="card-content">
              <p>Memory Agility Game coded in Vanilla Javascript & jQuery</p>
@@ -33,16 +38,16 @@ class Project extends Component {
            </div>
          </div>
        </div>
-       <div className="col s12 m12 l3">
+       <div className="col s12 m12 l4">
 
 
          <div className="card">
            <div className="card-image large">
-             <img className="grow" src={Nite} alt="screenshot of Activities manager"/>
-             <span className="card-title newcolor">Nite-Out</span>
+             <img className="grow picblink" src={Nite} alt="screenshot of Activities manager"/>
+             <span className="card-title orange-text text-lighten-1 newcolor">Nite-Out</span>
            </div>
            <div className="card-content">
-             <p>Used ReactJS and Firebase to make an activities manager. Plan your night-time events with me</p>
+             <p>Activities manager made with ReactJS and Firebase.</p>
            </div>
            <div className="card-action">
              <a href="http://nite-out-manager.bitballoon.com/">Live Site</a>
@@ -50,15 +55,15 @@ class Project extends Component {
            </div>
          </div>
        </div>
-    <div className="col s12 m12 l3">
+    <div className="col s12 m12 l4">
 
          <div className="card">
            <div className="card-image large">
-             <img className="grow" src={JCC} alt="screenshot of Joe's Cocktail Confections' site"/>
-             <span className="card-title newcolor">Joe's Cocktail Confections</span>
+             <img className="grow x" src={JCC} alt="screenshot of Joe's Cocktail Confections' site"/>
+             <span className="card-title orange-text text-lighten-1 newcolor">Joe's Cocktail Confections</span>
            </div>
            <div className="card-content">
-             <p>Used Express.js for a collaborative project with a local NYC confectioner</p>
+             <p>Collaborative project with a NYC confectioner using Express.js</p>
            </div>
            <div className="card-action">
              <a href="https://pacific-savannah-99868.herokuapp.com/">Live Site</a>
@@ -66,13 +71,14 @@ class Project extends Component {
            </div>
          </div>
        </div>
-       <div className="col s12 m12 l3">
+       /*
+       <div className="col s12 m12 l4">
 
 
          <div className="card">
            <div className="card-image large">
              <img className="grow" src={Blog} alt="screenshot of Blog site"/>
-             <span className="card-title newcolor">Blogging It <br /> </span>
+             <span className="card-title orange-text text-lighten-1 newcolor">Blogging It <br /> </span>
            </div>
            <div className="card-content">
              <p>Used ReactJS and Ruby on Rails to create a blogger site..</p>
@@ -84,6 +90,8 @@ class Project extends Component {
          </div>
        </div>
   </div>
+*/
+
   </section>
   </div>
 

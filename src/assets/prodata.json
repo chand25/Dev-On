@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Match Two of a Kind",
+      "tech": "Vanilla Javascript & jQuery",
+      "des": "memory agility game",
+      "image": "../assets/MTKscreenshot.png",
+      "github": "https://github.com/chand25/Mental-Agility-Game",
+      "live": "http://match-two-of-a-kind.bitballoon.com/"
+    }, {
+       "title": "Nite-Out",
+      "tech": "React & Firebase",
+      "des": "activities manager",
+      "image": "../assets/ScreenshotNiteOut.png",
+      "github": "https://github.com/chand25/Nite-Out-",
+      "live": "http://nite-out-manager.bitballoon.com/"
+    }
+    {
+      "title": "Joe's Cupcakes",
+      "tech": "Express.js",
+      "des": "collaborative project with a local NYC confectioner",
+      "image": "../assets/JCCScreenshot.png",
+      "github": "https://github.com/franklinbrooks/Joes-Cocktail-Confections",
+      "live": "https://pacific-savannah-99868.herokuapp.com/"
+    }, {
+       "title": "Blogging It",
+      "tech": "React-Rails",
+      "des": "blogs with assciated comments",
+      "image": "../assets/BlogScreenshot.png",
+      "github": "https://github.com/chand25/Blogging-IT",
+      "live": "227.211.25.18"
+    }
+]

@@ -10,9 +10,11 @@ class Contact extends Component {
 
 
          <div className="pagebkg contact" style={style}>
+
               <div className="contactme">
-                  <h1>Contact Me</h1>
+                  <h1 className="contactwords">Contact Me</h1>
               </div>
+
          </div>
     );
   }

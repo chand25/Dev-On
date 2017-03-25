@@ -1,12 +1,13 @@
-html, body{
+body{
   margin: 0 auto;
   height: 100%;
 }
 
+
 nav .widerscr{
   font-family: 'Raleway Dots', cursive;
   display: flex;
-  width: 100%;
+  width: 75%;
   justify-content: space-around;
 }
 
@@ -39,6 +40,10 @@ nav .widerscr{
    text-decoration: none; }
 
 
+*{
+  box-sizing: border-box;
+}
+
 .App {
   height: 100%;
   text-align: center;
@@ -59,9 +64,9 @@ nav .widerscr{
     white-space:nowrap;
     overflow:hidden;
     border-right: 1vh solid transparent;
-    -webkit-animation: typing 2s steps(30, end),
+    -webkit-animation: typing 2s steps(40, end),
                         blink-cursor 1s step-end;
-    -moz-animation: typing 2s steps(30, end),
+    -moz-animation: typing 2s steps(40, end),
                         blink-cursor 1s step-end;
   }
 
@@ -71,11 +76,11 @@ nav .widerscr{
    white-space:nowrap;
     overflow:hidden;
     border-right: 1vh solid black;
-    -webkit-animation: typing 2s steps(40, end),
+    -webkit-animation: typing 2s steps(50, end),
                         blink-cursor 1s step-end infinite;
     -webkit-animation-delay:2s;
     -webkit-animation-fill-mode:both;
-    -moz-animation: typing 2s steps(40, end),
+    -moz-animation: typing 2s steps(50, end),
                         blink-cursor 1s step-end infinite;
     -moz-animation-delay:2s;
     -moz-animation-fill-mode:both;
@@ -94,12 +99,16 @@ nav .widerscr{
 
 @-webkit-keyframes blink-cursor {
     0%, 100% { border-color: transparent }
+    25% { border-color: black }
     50% { border-color: black }
+    75% { border-color: black }
 }
 
 @-moz-keyframes blink-cursor {
     0%, 100% { border-color: transparent }
+    25% { border-color: black }
     50% { border-color: black }
+    75% { border-color: black }
 }
 
 
@@ -123,6 +132,7 @@ nav .widerscr{
 .homecontent{
   background-color: rgba(255, 255, 255, 1);
   width: 100vw;
+  font-family: 'Raleway Dots', cursive;
 }
 
 
@@ -144,6 +154,21 @@ nav .widerscr{
     letter-spacing: 10;
 }
 
+/*
+ .caption span.poemTitle {
+  font-family: 'Codystar', cursive;
+  font-size: 1.3em;
+  margin-left: 10%;
+  margin-top: 20%;
+  background-color: #111;
+  color: white;
+  line-height: 10vh;
+  padding: 2vw;
+  font-size: 4vh;
+  letter-spacing: 10;
+}
+
+old About Page
 
 .poemTitle{
   font-family: 'Raleway Dots', cursive;
@@ -151,6 +176,23 @@ nav .widerscr{
   margin-left: 0.03%;
   margin-top: 20%;
   }
+
+
+another About Page style
+.poemTitle{
+   width: 100%;
+   text-align: left;
+   position: absolute;
+   top: 10%;
+   font-family: 'Raleway Dots', cursive;
+ }
+
+.poemTitle aside{
+   width: 11vw;
+   font-size: 3vh;
+   text-align: center;
+}
+*/
 
 .pagebkg {
      display: flex;
@@ -167,14 +209,181 @@ nav .widerscr{
     background-size: cover;
 }
 
+/* About and Skills Section */
+/*
+.aboutContainer{
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+skillcontainer{
+display: flex;
+  flex-direction: column;
+  height: 25%;
+  }
+
+   border: 150px solid transparent;
+   border-bottom: 120px solid red;
+
+   .diamond:after{
+  content: '';
+  border: 150px solid transparent;
+  border-top: 150px solid red;
+}
+
+*/
+
+
+
+.skills{
+  background-color: rgba(255,100,0, 0.7);
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  padding: 10px 5px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.skills:hover{
+  cursor: pointer;
+}
+
+
+.rw-wrapper{
+  width: 80%;
+  position: relative;
+  margin: 0px auto 0 auto;
+  padding: 10px;
+}
+
+.rw-sentence{
+  margin: 0;
+}
+
+.rw-sentence span{
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-family: 'Trocchi';
+  white-space: nowrap;
+  text-shadow: 2px 5px 10px rgba(0,0,0,0.1);
+}
+.rw-sentence > span{
+  position: absolute;
+}
+.rw-sentence > span:first-child{
+  top: 80px;
+  left: 140px;
+  font-size: 685%;
+  color: rgba(87,180,255,0.6);
+}
+.rw-sentence > span:nth-child(2){
+  top: 160px;
+  left: 300px;
+  font-size: 315%;
+  color: rgba(40,218,255, 0.7);
+}
+.rw-sentence > span:nth-child(3){
+  top: 245px;
+  left: 65px;
+  font-size: 600%;
+  color: rgba(87,180,255, 0.8);
+}
+.rw-sentence > span:last-child{
+  top: 435px;
+  left: 550px;
+  font-size: 200%;
+  color: rgba(40,218,255, 0.9);
+}
+.rw-words{
+  position: absolute;
+  left: 220px;
+  top: 220px;
+  height: 80px;
+  width: 400px;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+.rw-words span{
+  position: absolute;
+  left: 50px;
+  font-size: 800%;
+  color: transparent;
+  text-shadow: 0px 0px 80px rgba(255,255,255,1);
+  opacity: 0;
+  -webkit-animation: rotateWord 18s linear infinite 0s;
+  animation: rotateWord 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.rw-words span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.rw-words span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+.rw-words span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.rw-words span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+
+@keyframes rotateWord {
+    0% { opacity: 0;
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+           -webkit-transform: translateY(-200px) translateZ(300px) rotateY(-120deg);
+           transform: translateY(-200px) translateZ(300px) rotateY(-120deg); }
+    5% { opacity: 1;
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+          -webkit-transform: translateY(0px) translateZ(0px) rotateY(0deg);
+          transform: translateY(0px) translateZ(0px) rotateY(0deg); }
+  6% { text-shadow: 0px 0px 0px rgba(255,255,255,1); color: rgb(255,100,0); }
+    17% { opacity: 1; text-shadow: 0px 0px 0px rgba(255,255,255,1); color: rgb(255,111,0); }
+    20% { opacity: 0; }
+    100% { opacity: 0; }
+}
+/*
+@media screen and (max-width: 1060px){
+  .rw-sentence > span:first-child { font-size: 500%; left: 0px;}
+  .rw-sentence > span:nth-child(2) { font-size: 200%; top: 195px; left: 30px; }
+  .rw-sentence > span:nth-child(3) { top: 285px; left: 30px; font-size: 235%; }
+  .rw-words { left: 95px; top: 285px; }
+  .rw-words span { font-size: 250%; }
+  .rw-sentence > span:last-child { top: 380px; left: 30px; }
+}
+
+@media screen and (max-width: 480px){
+  .rw-sentence > span:first-child { font-size: 200%; left: 0px;}
+  .rw-sentence > span:nth-child(2) { font-size: 100%; top: 50px; left: 10px; }
+  .rw-sentence > span:nth-child(3) { top: 76px; left: 10px; font-size: 120%; }
+  .rw-words { left: 45px; top: 76px; }
+  .rw-words span { font-size: 120%; }
+  .rw-sentence > span:last-child { top: 106px; left: 10px; font-size: 100%; }
+}
+*/
+
+
+
 /*Contact Page*/
 
 
 .contact h1{
+  width: 20vw;
   font-family: 'Atomic Age', cursive;
   margin-bottom: 20%;
-  position: fixed;
   animation: flick 30s infinite;
+  transform:  rotate(-20deg);
 }
 
 
@@ -187,27 +396,43 @@ nav .widerscr{
 }
 
 .contactme{
-  width: 33%;
-  position: relative;
-  z-index: 2;
-  transform:  rotate(-20deg);
+  width:100%;
   margin-left: 27%;
   top: 15%;
 }
 
 
+
+/*Project Page*/
+
 .grow {
   transition: all .4s ease-in-out;
 }
+
 .grow:hover {
   transform: scale(1.1);
 }
 
 .newcolor{
   font-family: 'Atomic Age', cursive;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 1px black;
 }
 
+ .projectcontainer {
+    width: 100%;
+    margin: 100px auto;
+    perspective: 1100px;
+  }
+
+.projectcontent {
+      margin-top: 5%;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       margin-right: 10%;
+      -webkit-animation: swing 3s ease-in-out;
+      -webkit-transform-origin-y:  0;
+    }
 
 @-webkit-keyframes swing {
     0% { -webkit-transform: rotateX(-90deg); }
@@ -218,30 +443,3 @@ nav .widerscr{
   }
 
 
-
-.projectcontent {
-       margin-top: 5%;
-       width: 100%;
-      height: 100%;
-      -webkit-animation: wobble .75s 3.5s;
-  }
-
-@-webkit-keyframes wobble {
-    15% { -webkit-transform: translateX(-10%) rotate(-5deg); }
-    30% { -webkit-transform: translateX(5%) rotate(3deg); }
-    45% { -webkit-transform: translateX(-5%) rotate(-3deg); }
-    60% { -webkit-transform: translateX(3%) rotate(2deg); }
-    75% { -webkit-transform: translateX(-2%) rotate(-1deg); }
-  }
-
-  .projectcontainer {
-    width: 100%;
-    margin: 100px auto;
-    perspective: 1100px;
-  }
-
-
-  .projectcontent {
-      -webkit-animation: swing 3s ease-in-out;
-      -webkit-transform-origin-y:  0;
-    }
