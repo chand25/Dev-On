@@ -17,9 +17,10 @@ npm-debug.log
 old2.css
 
 fadesAway.js
-
 CubeTextureLoader.js
 detector.js
 index.js
 three.js
 three.min.js
+#folders
+javascripts

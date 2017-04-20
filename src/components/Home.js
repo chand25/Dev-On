@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import homeBkg from '../assets/seeNYbridge.gif';
 import skate from '../assets/skateboard.jpeg';
-import txtEdit from '../assets/InstruMe.jpg';
+import dreaming from '../assets/stars.gif';
 import $ from 'jquery';
 
 
@@ -12,7 +12,7 @@ render() {
 
    let firstHomeImg = { backgroundImage: `url(${homeBkg})` };
    let secondHomeImg = { backgroundImage: `url(${skate})` };
-   let thirdHomeImg = { backgroundImage: `url(${txtEdit})` };
+   let thirdHomeImg = { backgroundImage: `url(${dreaming})` };
 
 
 
@@ -47,7 +47,7 @@ let timer;
              </div>
              <div className="homeParallax" style={secondHomeImg}>
                  <div className="caption">
-                 <span className="insidepic">Born, Raised, & Skated in NYC.</span>
+                   <span className="insidepic">Born, Raised, & Skated in NYC.</span>
                  </div>
              </div>
              <div className="homecontent" id="addType" >
@@ -56,14 +56,13 @@ let timer;
              </div>
              <div className="homeParallax" style={thirdHomeImg}>
                <div className="caption">
-
+                 <span className="insidepic chgclr">
+                        <span>Dream. </span>
+                        <span>Live. </span>
+                        <span>Code. </span>
+                       <span>Repeat. </span>
+                 </span>
                </div>
-               <div className="poemTitle">
-                   <aside>My</aside>
-                    <aside>Instrument</aside>
-                   <aside>and</aside>
-                   <aside>Me</aside>
-                </div>
              </div>
              <div className="homecontent" id="addMove">
                   <h3>Artistic</h3>

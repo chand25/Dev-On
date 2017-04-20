@@ -3,6 +3,14 @@ body{
   height: 100%;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100%;
+  text-align: center;
+}
 
 nav .widerscr{
   font-family: 'Raleway Dots', cursive;
@@ -38,16 +46,6 @@ nav .widerscr{
  .topnav:visited {
    color: silver;
    text-decoration: none; }
-
-
-*{
-  box-sizing: border-box;
-}
-
-.App {
-  height: 100%;
-  text-align: center;
-}
 
 
 .App-header {
@@ -149,9 +147,37 @@ nav .widerscr{
     background-color: #111;
     color: white;
     line-height: 12vh;
-    padding: 2vw;
+    padding: 3vw;
     font-size: 5vh;
     letter-spacing: 10;
+}
+
+.chgclr{
+      animation: displayMotto 10s linear 3s infinite alternate;
+      }
+
+  @keyframes displayMotto{
+    0%  {background-color: white; font-weight: bold;}
+    50% {background-color: rgba(255,111,0,1); font-weight: bold;}
+    100% {background-color: black;}
+  }
+
+
+
+.insidepic > span:first-child{
+  color: white;
+}
+
+.insidepic > span:nth-child(2){
+  color: rgba(255,111,0,1);
+}
+
+.insidepic > span:nth-child(3){
+  color: rgba(255,111,0,1);
+}
+
+.insidepic > span:last-child{
+ color: white;
 }
 
 /*
@@ -275,7 +301,7 @@ display: flex;
 .rw-sentence > span:first-child{
   top: 80px;
   left: 140px;
-  font-size: 685%;
+  font-size: 400%;
   color: rgba(87,180,255,0.6);
 }
 .rw-sentence > span:nth-child(2){
@@ -287,7 +313,7 @@ display: flex;
 .rw-sentence > span:nth-child(3){
   top: 245px;
   left: 65px;
-  font-size: 600%;
+  font-size: 185%;
   color: rgba(87,180,255, 0.8);
 }
 .rw-sentence > span:last-child{
@@ -308,7 +334,7 @@ display: flex;
 .rw-words span{
   position: absolute;
   left: 50px;
-  font-size: 800%;
+  font-size: 500%;
   color: transparent;
   text-shadow: 0px 0px 80px rgba(255,255,255,1);
   opacity: 0;

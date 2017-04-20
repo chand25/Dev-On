@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';// ES6
-import TransitionGroup from 'react-addons-transition-group';
 import $ from 'jquery';
 import AboutMe from './components/AboutMe';
 import Home from './components/Home';

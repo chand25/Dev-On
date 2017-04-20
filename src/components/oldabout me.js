@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import Aboutbkg from '../assets/algo.jpg';
+import Aboutbkg from '../assets/road.jpg';
+import Diamondbkg from '../assets/diamondbkg.jpg';
 
 
 
 
 class AboutMe extends Component {
-    render() {
+  render() {
 
  let style = {
     backgroundImage: `url(${Aboutbkg})` };
+  let diamondbkg = {
+    backgroundImage: `url(${Diamondbkg})` };
 
 
  let skills = ["JavaScript", "CSS", "HTML5", "Ruby on Rails", "SQL", "ReactJS", "Node.js", "PostgreSQL", "lodash",
@@ -21,34 +24,29 @@ class AboutMe extends Component {
        </div>
     )
  })
-
-   return (
+    return (
 <div className="aboutContainer">
      <div className="pagebkg" style={style}>
          <div className="container">
 
             <div className="rw-wrapper">
-                  <div className="row">
                       <h2 className="rw-sentence">
                             <span>What</span>
                             <span>would I like</span>
                             <span>to</span>
-                            <div className="col s12">
-                                <div className="rw-words">
-                                    <span>share</span>
-                                    <span>make</span>
-                                    <span>build</span>
-                                    <span>enjoy</span>
-                                    <span>create</span>
-                                    <span>discover</span>
-                                </div>
-                              </div>
+                            <div className="rw-words">
+                                <span>share</span>
+                                <span>make</span>
+                                <span>build</span>
+                                <span>enjoy</span>
+                                <span>create</span>
+                                <span>discover</span>
+                            </div>
                             <span>today?</span>
                        </h2>
-                    </div>
               </div>
 
-              <a className="modal-trigger waves-effect waves-light btn #ff6f00 amber darken-4" href="#modal1">My Journey to Reinvention</a>
+              <a className="modal-trigger waves-effect waves-light btn" href="#modal1">My Journey to Reinvention</a>
                 <div id="modal1" className="modal">
                     <div className="modal-content">
                        <h3>My Art.</h3>
@@ -62,7 +60,7 @@ class AboutMe extends Component {
                 </div>
          </div>
       </div>
-  </div>
+</div>
 
     );
   }
