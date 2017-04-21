@@ -296,7 +296,7 @@ display: flex;
   text-shadow: 2px 5px 10px rgba(0,0,0,0.1);
 }
 .rw-sentence > span{
-  position: absolute;
+  /*position: absolute;*/
 }
 .rw-sentence > span:first-child{
   top: 80px;
