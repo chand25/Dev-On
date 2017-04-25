@@ -36,13 +36,13 @@ nav .widerscr{
     100% {color: rgba(0,0,0,.8); text-shadow: 2px 2px red; }
   }
 
-
+/* top nav visited link */
 .topnav:link {
   color: silver;
   text-decoration: none;
 }
 
- /* footer visited link */
+ /* top nav visited link */
  .topnav:visited {
    color: silver;
    text-decoration: none; }
@@ -53,6 +53,13 @@ nav .widerscr{
   height: 20%;
   color: white;
 }
+
+/* Side Nav for mobile*/
+.side-nav{
+  font-family: 'Codystar', cursive;
+  font-weight: bold;
+}
+
 
 .innerStory h3 {
    opacity:0.8;
@@ -143,7 +150,7 @@ nav .widerscr{
 }
 
 .caption span.insidepic {
-   font-family: 'Codystar', cursive;
+    font-family: 'Codystar', cursive;
     background-color: #111;
     color: white;
     line-height: 12vh;
@@ -296,8 +303,9 @@ display: flex;
   text-shadow: 2px 5px 10px rgba(0,0,0,0.1);
 }
 .rw-sentence > span{
-  /*position: absolute;*/
+  position: absolute;
 }
+/*
 .rw-sentence > span:first-child{
   top: 80px;
   left: 140px;
@@ -322,10 +330,12 @@ display: flex;
   font-size: 200%;
   color: rgba(40,218,255, 0.9);
 }
+*/
 .rw-words{
   position: absolute;
-  left: 220px;
-  top: 220px;
+  left: 70%;
+  /*left: 220px;
+  top: 220px; */
   height: 80px;
   width: 400px;
   -webkit-perspective: 800px;

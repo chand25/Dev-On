@@ -30,9 +30,9 @@ class AboutMe extends Component {
             <div className="rw-wrapper">
                   <div className="row">
                       <h2 className="rw-sentence">
-                            {/*<span className="col s12">What </span>*/}
-                            <span className="col s12">I like </span>
-                            <span className="col s12">to</span>
+                            {/*<span className="flow-text">What </span>
+                                <span className="flow-text">I like </span></div>
+                                <span className="flow-text">to</span>*/}
                                 <div className="rw-words col s12">
                                     <span>share</span>
                                     <span>make</span>

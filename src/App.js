@@ -6,8 +6,9 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Projects from './components/Project';
 import NotFound from './components/NotFound';
-
 import './App.css';
+import Sidebackgrd from './assets/nyclight.gif';
+import Mepic from './assets/mepic.png';
 
 
 class App extends Component {
@@ -57,6 +58,15 @@ handleClick(){
                       </li>
                   </ul>
                   <ul className="side-nav" id="mobile-demo">
+                        <li><div className="userView">
+                              <div className="background">
+                                <img src={Sidebackgrd} alt='nyc background with flashing lights'/>
+                              </div>
+                              <a href="#!user"><img className="circle grow" src={Mepic} alt='me wearing red tie'/></a>
+                              <a href="#!name"><span className="white-text name">Shantel Moore</span></a>
+                              <a href="#!email"><span className="white-text email">moore.shantel@gmail.com</span></a>
+                            </div>
+                        </li>
                         <li><Link to="/" >Home</Link></li>
                         <li><Link to="/Contact">Contact</Link></li>
                         <li><Link to="/Projects">Projects</Link></li>
