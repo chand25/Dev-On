@@ -36,11 +36,11 @@ nav .widerscr{
     100% {color: rgba(0,0,0,.8); text-shadow: 2px 2px red; }
   }
 
-/* top nav visited link */
+/* top nav unvisited link
 .topnav:link {
   color: silver;
   text-decoration: none;
-}
+} */
 
  /* top nav visited link */
  .topnav:visited {
@@ -163,7 +163,7 @@ nav .widerscr{
       animation: displayMotto 10s linear 3s infinite alternate;
       }
 
-  @keyframes displayMotto{
+@keyframes displayMotto{
     0%  {background-color: white; font-weight: bold;}
     50% {background-color: rgba(255,111,0,1); font-weight: bold;}
     100% {background-color: black;}
@@ -228,7 +228,7 @@ another About Page style
 */
 
 .pagebkg {
-     display: flex;
+    display: flex;
       /*flex-flow: row wrap; */
      /*position: absolute;*/
      /*To support older browsers*/
@@ -302,6 +302,7 @@ display: flex;
   white-space: nowrap;
   text-shadow: 2px 5px 10px rgba(0,0,0,0.1);
 }
+
 .rw-sentence > span{
   position: absolute;
 }
@@ -341,6 +342,7 @@ display: flex;
   -webkit-perspective: 800px;
   perspective: 800px;
 }
+
 .rw-words span{
   position: absolute;
   left: 50px;
@@ -351,22 +353,27 @@ display: flex;
   -webkit-animation: rotateWord 18s linear infinite 0s;
   animation: rotateWord 18s linear infinite 0s;
 }
+
 .rw-words span:nth-child(2) {
     -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
+
 .rw-words span:nth-child(3) {
     -webkit-animation-delay: 6s;
   animation-delay: 6s;
 }
+
 .rw-words span:nth-child(4) {
     -webkit-animation-delay: 9s;
   animation-delay: 9s;
 }
+
 .rw-words span:nth-child(5) {
     -webkit-animation-delay: 12s;
   animation-delay: 12s;
 }
+
 .rw-words span:nth-child(6) {
     -webkit-animation-delay: 15s;
   animation-delay: 15s;
@@ -389,7 +396,7 @@ display: flex;
     20% { opacity: 0; }
     100% { opacity: 0; }
 }
-/*
+
 @media screen and (max-width: 1060px){
   .rw-sentence > span:first-child { font-size: 500%; left: 0px;}
   .rw-sentence > span:nth-child(2) { font-size: 200%; top: 195px; left: 30px; }
@@ -407,21 +414,25 @@ display: flex;
   .rw-words span { font-size: 120%; }
   .rw-sentence > span:last-child { top: 106px; left: 10px; font-size: 100%; }
 }
+
+
+
+
+/*Contact Page
+ transform:  rotate(-20deg);
 */
+.contactme{
+  width:100%;
+  margin-left: 27%;
+  top: 15%;
+}
 
-
-
-/*Contact Page*/
-
-
-.contact h1{
+.contactme h1{
   width: 20vw;
   font-family: 'Atomic Age', cursive;
   margin-bottom: 20%;
   animation: flick 30s infinite;
-  transform:  rotate(-20deg);
 }
-
 
 @keyframes flick {
    0% {color: rgba(200, 50, 100, 1);}
@@ -431,11 +442,7 @@ display: flex;
   100% {color: rgba(200, 50, 100, 1); }
 }
 
-.contactme{
-  width:100%;
-  margin-left: 27%;
-  top: 15%;
-}
+
 
 
 

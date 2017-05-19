@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Contactbkg from '../assets/compdesk.jpeg';
+import Contactbkg from '../assets/nyclight.gif';
 
 
 class Contact extends Component {
