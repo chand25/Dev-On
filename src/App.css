@@ -311,12 +311,14 @@ display: flex;
   font-size: 400%;
   color: rgba(87,180,255,0.6);
 }
+
 .rw-sentence > span:nth-child(2){
   top: 160px;
   left: 300px;
   font-size: 315%;
   color: rgba(40,218,255, 0.7);
 }
+
 .rw-sentence > span:nth-child(3){
   top: 245px;
   left: 65px;
@@ -419,6 +421,8 @@ display: flex;
 /*Contact Page
  transform:  rotate(-20deg);
 */
+/*
+recent contact page
 .contactme{
   width:100%;
   margin-left: 27%;
@@ -440,8 +444,10 @@ display: flex;
   100% {color: rgba(200, 50, 100, 1); }
 }
 
-
-
+*/
+.contact{
+  display: flex;
+}
 
 
 /*Project Page*/
