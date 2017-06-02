@@ -424,13 +424,13 @@ display: flex;
 .contactme{
   width:100%;
   margin-left: 27%;
-  top: 15%;
+  margin-top: 10%;
 }
 
 .contactme h1{
-  width: 20vw;
+  width: 50vw;
   font-family: 'Atomic Age', cursive;
-  margin-bottom: 20%;
+  margin-bottom: 30%;
   animation: flick 30s infinite;
 }
 

@@ -12,24 +12,7 @@ import Mepic from './assets/mepic.png';
 
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-      showDiamond: false,
-      showCoal: true,
-      skills: ["JavaScript", "CSS", "HTML5", "Ruby on Rails", "SQL", "ReactJS", "Node.js", "PostgreSQL", "lodash",
-      "Bootstrap", "Materialize", "SQL", "Express.js", "Cylon.JS", "SASS", "jQuery"],
-    };
-    this.handleClick = this.handleClick.bind(this);
-}
 
-
-
-handleClick(){
-   this.setState({
-    showDiamond: true,
-  });
-}
 
   render() {
 

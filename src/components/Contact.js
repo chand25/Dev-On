@@ -13,7 +13,15 @@ class Contact extends Component {
 
               <div className="contactme">
                   <h1 className="contactwords">Contact Me</h1>
-              </div>
+                  <form>
+                      <label htmlFor="Name">Name:
+                          <input type="text" id="name"/>
+                      </label>
+                          <textarea name="textarea">Write something here</textarea>
+                            <input type="submit" value="Submit" />
+                   </form>
+
+            </div>
 
          </div>
     );
