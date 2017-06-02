@@ -1,8 +1,3 @@
-body{
-  margin: 0 auto;
-  height: 100%;
-}
-
 *{
   box-sizing: border-box;
 }
@@ -10,6 +5,11 @@ body{
 .App {
   height: 100%;
   text-align: center;
+}
+
+body{
+  margin: 0 auto;
+  height: 100%;
 }
 
 nav .widerscr{
@@ -166,10 +166,8 @@ nav .widerscr{
 @keyframes displayMotto{
     0%  {background-color: white; font-weight: bold;}
     50% {background-color: rgba(255,111,0,1); font-weight: bold;}
-    100% {background-color: black;}
+    100% {background-color: black; font-weight: bold;}
   }
-
-
 
 .insidepic > span:first-child{
   color: white;
