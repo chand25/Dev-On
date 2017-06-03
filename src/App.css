@@ -446,27 +446,28 @@ recent contact page
 
 */
 .contact{
-  display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
 .leftcontact{
-    height: 100%;
+    /*height: 100%;*/
     width: 50%;
     /* Set the height to match that of the viewport. */
-    height: 100vh;
+    /*height: 100vh; */
     /* Set the width to match that of the viewport. */
-    width: 50vw;
+   /* width: 50vw; */
     background-repeat: no-repeat;
     background-size: cover;
 }
 .rightcontact{
-    height: 100%;
-    width: 50%;
+     /*height: 100%;*/
+     /*width: 50%; */
     /* Set the height to match that of the viewport. */
-    height: 100vh;
+    /*height: 100vh; */
     /* Set the width to match that of the viewport. */
-    width: 50vw;
-    background-position: 40%;
+    /*width: 50vw; */
+    width: 50 vmin
+    background-position: 45%;
     background-repeat: no-repeat;
     background-size: cover;
 }
