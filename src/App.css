@@ -466,7 +466,7 @@ recent contact page
     /*height: 100vh; */
     /* Set the width to match that of the viewport. */
     /*width: 50vw; */
-    width: 50 vmin
+    width: 50vmin;
     background-position: 45%;
     background-repeat: no-repeat;
     background-size: cover;
