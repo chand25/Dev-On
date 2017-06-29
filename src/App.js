@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
-import $ from 'jquery';
 import AboutMe from './components/AboutMe';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -12,7 +11,29 @@ import Mepic from './assets/mepic.png';
 
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      width: window.innerWidth,
+    };
+    this.updateDimensions= this.updateDimensions.bind(this)
+  }
 
+updateDimensions(){
+  if(window.innerWidth >=1066){
+    this.setState({width: window.innerWidth,})
+  } else{
+
+  }
+}
+
+componentDidMount (){
+  window.addEventListener('resize', this.updateDimensions);
+}
+
+componentWillUnMount (){
+  window.addEventListener('resize', this.updateDimensions);
+}
 
   render() {
 
