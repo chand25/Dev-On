@@ -37,9 +37,14 @@ let timer;
     return (
       <div className="aboutContainer">
 
-             <div className="homeParallax citymove" style={firstHomeImg}>
+            <div className="homeParallax" style={thirdHomeImg}>
                <div className="caption">
-                 <span className="insidepic">Framed Perspective</span>
+                 <span className="insidepic chgclr">
+                        <span>Dream. </span>
+                        <span>Live. </span>
+                        <span>Code. </span>
+                       <span>Repeat. </span>
+                 </span>
                </div>
              </div>
              <div className="homecontent innerStory">
@@ -57,19 +62,14 @@ let timer;
                   <h4>Passionate.</h4>
              </div>
 
-             <div className="homeParallax" style={thirdHomeImg}>
+             <div className="homeParallax citymove" style={firstHomeImg}>
                <div className="caption">
-                 <span className="insidepic chgclr">
-                        <span>Dream. </span>
-                        <span>Live. </span>
-                        <span>Code. </span>
-                       <span>Repeat. </span>
-                 </span>
+                 <span className="insidepic">Broad Perspective</span>
                </div>
              </div>
              <div className="homecontent" id="addMove">
-                  <h3>Artistic</h3>
-                  <h4>Analytical</h4>
+                  <h3>Artistic. </h3>
+                  <h4>Analytical. </h4>
              </div>
 
       </div>
