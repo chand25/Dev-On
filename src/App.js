@@ -9,9 +9,9 @@ import withProps from './components/withProps';
 import './App.css';
 import Sidebackgrd from './assets/nyclight.gif';
 import Mepic from './assets/mepic.png';
-import $ from 'jquery';
-import 'materialize-css';
-import 'materialize-css/dist/css/materialize.min.css';
+//import $ from 'jquery';
+//import 'materialize-css';
+//import 'materialize-css/dist/css/materialize.min.css';
 
 
 
@@ -29,22 +29,25 @@ updateDimensions() {
    this.setState({
         windowWidth: window.innerWidth
         });
+    this.forceUpdate();
 }
 
 
 componentDidMount (){
   window.addEventListener('resize', this.updateDimensions);
-
+/*
   console.log('Slider mounted');
   $('.slider').slider(); //Initialize slider
   $('.slider').slider({interval:5000});
   $('.slider').slider('next'); //Roll slider past initial fadein
+*/
 }
-/*
+
+
 componentWillUnMount (){
   window.removeEventListener('resize', this.updateDimensions);
 }
-*/
+
   render() {
 
 

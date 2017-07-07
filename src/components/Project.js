@@ -4,21 +4,22 @@ import JCC from '../assets/JCCScreenshot.png';
 import Nite from '../assets/ScreenshotNiteOut.png';
 import MIP from '../assets/jsrobots.jpg';
 import gallerybkg from '../assets/room.jpg';
-
-
+//import $ from 'jquery';
+//import 'materialize-css';
+//import 'materialize-css/dist/css/materialize.min.css';
 
 
 
 
 class Projects extends Component {
-/*
+
 componentDidMount (){
   console.log('Slider mounted');
-  $('.slider').slider(); //Initialize slider
-  $('.slider').slider({interval:5000});
-  $('.slider').slider('next'); //Roll slider past initial fadein
+  //$('.slider').slider(); //Initialize slider
+  //$('.slider').slider({interval:5000});
+ // $('.slider').slider('next'); //Roll slider past initial fadein
 }
-*/
+
 
 render() {
 

@@ -36,6 +36,7 @@ let timer;
 
     return (
       <div className="aboutContainer">
+
              <div className="homeParallax citymove" style={firstHomeImg}>
                <div className="caption">
                  <span className="insidepic">Framed Perspective</span>
@@ -45,6 +46,7 @@ let timer;
                   <h3>Web Developer.</h3>
                   <h4>Creator.</h4>
              </div>
+
              <div className="homeParallax" style={secondHomeImg}>
                  <div className="caption">
                    <span className="insidepic">Born, Raised, & Skated in NYC.</span>
@@ -54,6 +56,7 @@ let timer;
                   <h3>Driven.</h3>
                   <h4>Passionate.</h4>
              </div>
+
              <div className="homeParallax" style={thirdHomeImg}>
                <div className="caption">
                  <span className="insidepic chgclr">
@@ -68,6 +71,7 @@ let timer;
                   <h3>Artistic</h3>
                   <h4>Analytical</h4>
              </div>
+
       </div>
     );
   }
