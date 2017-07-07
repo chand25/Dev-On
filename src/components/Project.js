@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import MTK from '../assets/MTKscreenshot.png';
 import JCC from '../assets/JCCScreenshot.png';
 import Nite from '../assets/ScreenshotNiteOut.png';
-import Blog from '../assets/BlogScreenshot.png';
 import MIP from '../assets/jsrobots.jpg';
 import gallerybkg from '../assets/room.jpg';
 
@@ -12,12 +11,24 @@ import gallerybkg from '../assets/room.jpg';
 
 
 class Projects extends Component {
-  render() {
+/*
+componentDidMount (){
+  console.log('Slider mounted');
+  $('.slider').slider(); //Initialize slider
+  $('.slider').slider({interval:5000});
+  $('.slider').slider('next'); //Roll slider past initial fadein
+}
+*/
+
+render() {
 
 let style = {
     backgroundImage: `url(${gallerybkg})` };
 
- if (window.innerWidth>=1066){
+
+let width = this.props.width;
+console.log(width);
+ if (width>=520){
     return (
 
 
@@ -98,10 +109,12 @@ let style = {
 
     );
    }
+
      return(
-      <div className="pagebkg" style={style}>
+     <div className="pagebkg" style={style}>
          <div className="mobileProjectContainer">
           <section className="mobileProjectContent">
+
               <div className="slider">
                 <ul className="slides">
                   <li>

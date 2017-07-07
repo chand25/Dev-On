@@ -5,36 +5,46 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Projects from './components/Project';
 import NotFound from './components/NotFound';
+import withProps from './components/withProps';
 import './App.css';
 import Sidebackgrd from './assets/nyclight.gif';
 import Mepic from './assets/mepic.png';
+import $ from 'jquery';
+import 'materialize-css';
+import 'materialize-css/dist/css/materialize.min.css';
+
 
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
-      width: window.innerWidth,
+      windowWidth: window.innerWidth,
     };
-    this.updateDimensions= this.updateDimensions.bind(this)
+   this.updateDimensions= this.updateDimensions.bind(this)
   }
 
-updateDimensions(){
-  if(window.innerWidth >=1066){
-    this.setState({width: window.innerWidth,})
-  } else{
 
-  }
+updateDimensions() {
+   this.setState({
+        windowWidth: window.innerWidth
+        });
 }
+
 
 componentDidMount (){
   window.addEventListener('resize', this.updateDimensions);
-}
 
+  console.log('Slider mounted');
+  $('.slider').slider(); //Initialize slider
+  $('.slider').slider({interval:5000});
+  $('.slider').slider('next'); //Roll slider past initial fadein
+}
+/*
 componentWillUnMount (){
-  window.addEventListener('resize', this.updateDimensions);
+  window.removeEventListener('resize', this.updateDimensions);
 }
-
+*/
   render() {
 
 
@@ -84,7 +94,7 @@ componentWillUnMount (){
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={AboutMe} />
               <Route exact path="/contact" component={Contact} />
-               <Route exact path="/projects" component={Projects} />
+               <Route exact path="/projects" component={withProps(Projects, {width: this.state.windowWidth})}/>
               <Route component={NotFound} />
             </Switch>
           </div>

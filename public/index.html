@@ -11,10 +11,8 @@
     <!-- Compiled and minified CSS for Materialize -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
  <!-- Compiled and minified CSS -->
-   <!-- Font Awesome -->
+<!-- Font Awesome -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
@@ -53,7 +51,12 @@
         draggable: true
        });
 
-     $('.slider').slider({interval:5000});
+     // Start slider
+
+     //$('.slider').slider();
+     //$('.slider').slider({interval:5000});
+
+
      $('.modal').modal({
         dismissible: true, // Modal can be dismissed by clicking outside of the modal
         opacity: .2, // Opacity of modal background
@@ -65,7 +68,9 @@
           console.log(modal, trigger);
         },
       });
+
   })
+
   </script>
   </body>
 </html>
