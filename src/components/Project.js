@@ -26,6 +26,16 @@ render() {
 let style = {
     backgroundImage: `url(${gallerybkg})` };
 
+ let clrRefresh = ( function (){
+  window.location.reload(true);
+   //window.parent.location = window.parent.location.href;
+  return function (){
+    let btn = document.getElementById("projectButton");
+    btn.className = "clearMe";
+    btn.addClass("clearMe");
+  }
+});
+
 
 let width = this.props.width;
 console.log(width);
@@ -58,11 +68,11 @@ console.log(width);
        <div className="col s12 m12 l3">
          <div className="card">
            <div className="card-image large">
-             <img className="grow x" src={JCC} alt="screenshot of Joe's Cocktail Confections' site"/>
+             <img className="grow" src={JCC} alt="screenshot of Joe's Cocktail Confections' site"/>
              <span className="card-title orange-text text-lighten-1 newcolor">Joe's Cocktail Confections</span>
            </div>
            <div className="card-content">
-             <p>Collaborative project with NYC confectioner using Express.js</p>
+             <p>Collaboration with NYC confectioner using Express.js</p>
            </div>
            <div className="card-action">
              <a href="https://pacific-savannah-99868.herokuapp.com/">Live Site</a>
@@ -107,41 +117,43 @@ console.log(width);
   </section>
   </div>
 </div>
-
-    );
-   }
-
+  );
+ }
      return(
+
      <div className="pagebkg" style={style}>
          <div className="mobileProjectContainer">
           <section className="mobileProjectContent">
 
+
+            <button type="button" id="projectButton" className="waves-effect waves-light btn #ff6f00 amber darken-4 btnFont" href="#" onClick={ () => clrRefresh()}>CLICK ME</button>
               <div className="slider">
                 <ul className="slides">
+
                   <li>
                     <img src={MIP} alt="screenshot of MIP robots"/>
                     <div className="caption center-align mobilecaption">
-                      <h3 className="orange-text text-lighten-1 newcolor">Verge of Now</h3>
-                      <h5 className="orange-text text-darken-5">Programmed with Cylon.js/Javascript Robotics</h5>
-                      <a href="https://github.com/chand25/Age-of-Today-IoT">View Github</a>
+                       <h3 className="orange-text text-lighten-1 newcolor">Verge of Now</h3>
+                       <h5 className="orange-text text-darken-5">Programmed with Cylon.js/Javascript Robotics</h5>
+                       <a href="https://github.com/chand25/Age-of-Today-IoT">View Github</a>
                     </div>
                   </li>
                   <li>
                     <img src={JCC} alt="screenshot of Joe's Cocktail Confections' site"/>
                     <div className="caption left-align mobilecaption">
-                      <h3 className="orange-text text-lighten-1 newcolor">Joes Cocktail Confections</h3>
-                      <h5 className="orange-text text-darken-5">Collaborative project with NYC confectioner using Express.js</h5>
-                         <a className="atagSpace" href="https://pacific-savannah-99868.herokuapp.com/">Live Site</a>
-                         <a href="https://github.com/franklinbrooks/Joes-Cocktail-Confections">View Github</a>
+                        <h3 className="orange-text text-lighten-1 newcolor">Joes Cocktail Confections</h3>
+                        <h5 className="orange-text text-darken-5">Collaborative project with NYC confectioner using Express.js</h5>
+                        <a className="atagSpace" href="https://pacific-savannah-99868.herokuapp.com/">Live Site</a>
+                        <a href="https://github.com/franklinbrooks/Joes-Cocktail-Confections">View Github</a>
                     </div>
                   </li>
                   <li>
                     <img src={Nite} alt="screenshot of Activities manager"/>
                     <div className="caption right-align mobilecaption">
-                      <h3 className="orange-text text-lighten-1 newcolor">Nite-Out</h3>
-                      <h5 className="orange-text text-darken-5">Activities manager made with ReactJS and Firebase.</h5>
-                       <a className="atagSpace" href="http://nite-out-manager.bitballoon.com/">Live Site</a>
-                       <a href="https://github.com/chand25/Nite-Out">View Github</a>
+                        <h3 className="orange-text text-lighten-1 newcolor">Nite-Out</h3>
+                        <h5 className="orange-text text-darken-5">Activities manager made with ReactJS and Firebase.</h5>
+                        <a className="atagSpace" href="http://nite-out-manager.bitballoon.com/">Live Site</a>
+                        <a href="https://github.com/chand25/Nite-Out">View Github</a>
                     </div>
                   </li>
                   <li>
@@ -149,8 +161,8 @@ console.log(width);
                     <div className="caption center-align mobilecaption">
                       <h3 className="orange-text text-lighten-1 newcolor">Match Two of a Kind</h3>
                       <h5 className="orange-text text-darken-5">Memory Agility Game coded in Vanilla Javascript & jQuery.</h5>
-                     <a className="atagSpace" href="http://match-two-of-a-kind.bitballoon.com/">Live Site</a>
-                     <a href="https://github.com/chand25/Mental-Agility-Game">View Github</a>
+                      <a className="atagSpace" href="http://match-two-of-a-kind.bitballoon.com/">Live Site</a>
+                      <a href="https://github.com/chand25/Mental-Agility-Game">View Github</a>
                     </div>
                   </li>
                 </ul>

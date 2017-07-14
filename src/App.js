@@ -21,7 +21,7 @@ class App extends Component {
     this.state = {
       windowWidth: window.innerWidth,
     };
-   this.updateDimensions= this.updateDimensions.bind(this)
+   this.updateDimensions= this.updateDimensions.bind(this);
   }
 
 
@@ -29,7 +29,7 @@ updateDimensions() {
    this.setState({
         windowWidth: window.innerWidth
         });
-    this.forceUpdate();
+   // this.forceUpdate();
 }
 
 
@@ -43,14 +43,13 @@ componentDidMount (){
 */
 }
 
-
 componentWillUnMount (){
   window.removeEventListener('resize', this.updateDimensions);
 }
 
+
+
   render() {
-
-
 
      return (
     <BrowserRouter>

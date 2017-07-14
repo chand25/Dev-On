@@ -304,7 +304,7 @@ display: flex;
 .rw-sentence > span{
   position: absolute;
 }
-/*
+
 .rw-sentence > span:first-child{
   top: 80px;
   left: 140px;
@@ -331,7 +331,7 @@ display: flex;
   font-size: 200%;
   color: rgba(40,218,255, 0.9);
 }
-*/
+
 .rw-words{
   position: absolute;
   left: 70%;
@@ -445,10 +445,12 @@ recent contact page
 }
 
 */
-.contact{
+
+/*height: 100%;*/
+/*.contact{
   flex-wrap: wrap;
 }
-
+*/
 .leftcontact{
     /*height: 100%;*/
     width: 50%;
@@ -459,6 +461,7 @@ recent contact page
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .rightcontact{
      /*height: 100%;*/
      /*width: 50%; */
@@ -466,11 +469,65 @@ recent contact page
     /*height: 100vh; */
     /* Set the width to match that of the viewport. */
     /*width: 50vw; */
-    width: 50vmin;
+    width: 50%;
     background-position: 45%;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*
+.leftimg { width: 100%;}
+
+.leftimg { width: 100%;}
+
+
+.contact {width: 100%; }
+
+div.contactleft figure {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 10s slidy infinite;
+}
+*/
+/*
+.rightimg {
+  width: 100%; }
+
+div.contactright figure {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  right: 0;
+}
+*/
+
+.slider { overflow: hidden; }
+.left img { width: 20%; float: left; }
+.left {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
 
 /*Project Page*/
 
@@ -525,6 +582,27 @@ recent contact page
   font-weight: bold;
   background-color: rgba(0,0,0,.6);
 }
+
+.slider .slides {
+    background-color: rgba(158,158,158, 0.0);
+  }
+
+.btnFont{
+      color: rgba(250, 0, 0, .8);
+      font-family: 'Codystar', cursive;
+      text-shadow: 3px 3px gold;
+      border-radius: 100px;
+      animation: flash 4s linear 2s infinite alternate;
+ }
+
+  .clearMe{
+display: none;
+visibility: hidden;
+opacity: 0.0;
+z-index: -2;
+}
+
+
 .atagSpace{
   margin-right: 7px;
 }
