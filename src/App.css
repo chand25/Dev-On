@@ -451,17 +451,20 @@ recent contact page
   flex-wrap: wrap;
 }
 */
+
+/*
 .leftcontact{
     /*height: 100%;*/
-    width: 50%;
+    /*width: 50%; */
     /* Set the height to match that of the viewport. */
     /*height: 100vh; */
     /* Set the width to match that of the viewport. */
    /* width: 50vw; */
-    background-repeat: no-repeat;
+  /*  background-repeat: no-repeat;
     background-size: cover;
 }
-
+*/
+/*
 .rightcontact{
      /*height: 100%;*/
      /*width: 50%; */
@@ -469,12 +472,12 @@ recent contact page
     /*height: 100vh; */
     /* Set the width to match that of the viewport. */
     /*width: 50vw; */
-    width: 50%;
+    /*width: 50%;
     background-position: 45%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*
+
 .leftimg { width: 100%;}
 
 .leftimg { width: 100%;}
@@ -504,29 +507,42 @@ div.contactright figure {
 }
 */
 
-.slider { overflow: hidden; }
-.left img { width: 20%; float: left; }
-.left {
-  position: relative;
-  width: 500%;
+.slider {
+  overflow: hidden;
+  height: 100%;
   margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
+  position: absolute;
+  }
+
+.leftcontact img { width: 22%;}
+.leftcontact {
+  position: relative;
+  margin: 0;
+  left: -460%;
+  width: 500%;
   animation: 30s slidy infinite;
 }
 
+.rightcontact img { width: 20%;  }
+.rightcontact {
+  position: relative;
+  margin: 0;
+  right: -36%;
+  width: 500%;
+}
+
 @keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
+0% { left: -20%; }
+20% { left: -75%; }
+25% { left: -75%; }
+45% { left: -150%; }
+50% { left: -150%; }
+70% { left: -225%; }
+75% { left: -225%; }
 95% { left: -300%; }
 100% { left: -400%; }
 }
+
 
 
 /*Project Page*/
