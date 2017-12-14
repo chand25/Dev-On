@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Aboutbkg from '../assets/algo.jpg';
+import '../About.css';
 
 
 

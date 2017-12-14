@@ -22,14 +22,24 @@ class Contact extends Component {
     let rejoice = {
     backgroundImage: `url(${Rejoice})` };
 
-    let expectBest= {
-    backgroundImage: `url(${Expectbt})` };
+    let monitor = {
+    backgroundImage: `url(${Monitor})` };
 
-
+//<img src={Monitor} alt="pics of mail box and payphone"/>
+//<div className="neoncontainer" style={monitor}></div>
 
     return (
 
-      <div className="wrapperr">
+      <div className="wrapper">
+
+         <div className="neonbody">
+
+                      <h1>Contact Me</h1>
+                      <p className="neonp">
+                           <a href="#" className="neona">aspire@shantelmoore.com</a>
+                      </p>
+         </div>
+
           <div className="slider">
                   <div className="leftcontact">
                       <img src={Expectbt} alt="phone screens with developer lingo"/>
@@ -39,16 +49,9 @@ class Contact extends Component {
                       <img src={Expectbt} alt="phone screens with developer lingo"/>
                   </div>
           </div>
-          <div className="slider">
-                  <div className="rightcontact">
-                      <img src={Monitor} alt="pics of mail box and payphone"/>
-                      <img src={Rejoice} alt="girl hands up rejoicing"/>
-                       <img src={Dreamnyc} alt="dream in a bottle"/>
-                      <img src={Card} alt="woman holding card"/>
-                      <img src={Monitor} alt="pics of mail box and payphone"/>
-                      <img src={Card} alt="woman holding card"/>
-                  </div>
-           </div>
+
+
+
 
       </div>
     );
