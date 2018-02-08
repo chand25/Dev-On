@@ -1,12 +1,12 @@
 
 /* About and Skills Section */
-/*
+/* */
 .aboutContainer{
     text-align: center;
     vertical-align: middle;
     overflow: hidden;
 }
-*/
+
 
 .skills{
   background-color: rgba(255,100,0, 0.7);
@@ -24,9 +24,27 @@
   background-blend-mode: screen;
 }
 
+.modalhkShape{
+  margin-top: 50%;
+  left: 35%;
+  border-radius: 10px 10px;
+}
+
+.modalShape {
+   margin-top: 55%;
+    left: 35%;
+    width: 20%;
+    height: 8%;
+    background: #088cb7;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
 
 .rw-wrapper{
-  width: 80%;
+  width: 85%;
   position: relative;
   margin: 0px auto 0 auto;
   padding: 10px;
@@ -46,7 +64,6 @@
 
 .rw-sentence > span{
   position: absolute;
-
 }
 
 .rw-sentence > span:first-child{
@@ -77,45 +94,45 @@
   left: 65px;
   */
   top: 770%;
-  left: 30%;
+  left: 5%;
   font-size: 185%;
   color: rgba(87,180,255, 0.8);
 }
+
 .rw-sentence > span:last-child{
   /*
   top: 435px;
   left: 550px;
   */
-  top: 900%;
-  left: 90%;
+  top:1090%;
+  left: 30%;
   font-size: 200%;
   color: rgba(40,218,255, 0.9);
 }
 
 .rw-words{
   position: absolute;
-  /*
-  left: 70%;
-
-  */
-  left: 10%;
-  top: 940%;
+  mix-blend-mode: color-dodge;
+  /* left: 70%;*/
+  left: 125%;
+  top: 777%;
   /*left: 220px;
-  top: 220px; */
-  height: 80px;
-  width: 400px;
+  top: 220px;
+ height: 80px;
+ width: 400px;
+  */
+ height: 25%;
+ width: 100%;
   -webkit-perspective: 800px;
   perspective: 800px;
 }
 
 .rw-words span{
   position: absolute;
-  /*
-  left: 50px;
-  */
-  left: -5%;
-  top: 110%;
-  letter-spacing: -2px;
+  /*left: 50px; */
+  left: 20%;
+  top: 10%;
+  letter-spacing: -3px;
   font-size: 450%;
   color: transparent;
   text-shadow: 0px 0px 80px rgba(255,255,255,1);
@@ -125,27 +142,27 @@
 }
 
 .rw-words span:nth-child(2) {
-    -webkit-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
 
 .rw-words span:nth-child(3) {
-    -webkit-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
   animation-delay: 6s;
 }
 
 .rw-words span:nth-child(4) {
-    -webkit-animation-delay: 9s;
+  -webkit-animation-delay: 9s;
   animation-delay: 9s;
 }
 
 .rw-words span:nth-child(5) {
-    -webkit-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
   animation-delay: 12s;
 }
 
 .rw-words span:nth-child(6) {
-    -webkit-animation-delay: 15s;
+  -webkit-animation-delay: 15s;
   animation-delay: 15s;
 }
 
@@ -154,18 +171,19 @@
     0% { opacity: 0;
           -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
-           -webkit-transform: translateY(-200px) translateZ(300px) rotateY(-120deg);
-           transform: translateY(-200px) translateZ(300px) rotateY(-120deg); }
+          -webkit-transform: translateY(-200px) translateZ(300px) rotateY(-120deg);
+          transform: translateY(-200px) translateZ(300px) rotateY(-120deg); }
     5% { opacity: 1;
           -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
           -webkit-transform: translateY(0px) translateZ(0px) rotateY(0deg);
           transform: translateY(0px) translateZ(0px) rotateY(0deg); }
-  6% { text-shadow: 0px 0px 0px rgba(255,255,255,1); color: rgb(255,100,0); }
+     6% { text-shadow: 0px 0px 0px rgba(255,255,255,1); color: rgb(255,100,0); }
     17% { opacity: 1; text-shadow: 0px 0px 0px rgba(255,255,255,1); color: rgb(255,111,0); }
     20% { opacity: 0; }
     100% { opacity: 0; }
 }
+
 /*
 @media screen and (max-width: 1060px){
   .rw-sentence > span:first-child { font-size: 500%; left: 0px;}
@@ -175,15 +193,14 @@
   .rw-words span { font-size: 250%; }
   .rw-sentence > span:last-child { top: 380px; left: 30px; }
 }
-
+*/
 @media screen and (max-width: 480px){
-  .rw-sentence > span:first-child { font-size: 200%; left: 0px;}
-  .rw-sentence > span:nth-child(2) { font-size: 100%; top: 50px; left: 10px; }
-  .rw-sentence > span:nth-child(3) { top: 76px; left: 10px; font-size: 120%; }
-  .rw-words { left: 45px; top: 76px; }
+  .rw-sentence > span:first-child { font-size: 200%; left:10%;}
+  .rw-sentence > span:nth-child(2) { font-size: 100%; top: 350%; left: 30%; }
+  .rw-sentence > span:nth-child(3) { top: 500%; left: 35%; font-size: 120%; }
+  .rw-words { left: 150%; top: 650%; }
   .rw-words span { font-size: 120%; }
-  .rw-sentence > span:last-child { top: 106px; left: 10px; font-size: 100%; }
+  .rw-sentence > span:last-child { top: 825%; left: 40%; font-size: 100%; }
 }
 
-*/
 

@@ -12,7 +12,7 @@ class AboutMe extends Component {
     backgroundImage: `url(${Aboutbkg})` };
 
 
- let skills = ["JavaScript", "CSS", "HTML5", "Ruby on Rails", "SQL", "ReactJS", "Node.js", "PostgreSQL", "lodash",
+ let skills = ["JavaScript", "CSS", "HTML5", "Java", "SQL", "ReactJS", "Node.js", "PostgreSQL", "lodash",
       "Bootstrap", "Materialize", "SQL", "Express.js", "Cylon.JS", "SASS", "jQuery"];
 
  let skillList = skills.map(function(skill, i){
@@ -42,12 +42,13 @@ class AboutMe extends Component {
                                     <span>create</span>
                                     <span>discover</span>
                                 </div>
-                            <span className="col s12">today?</span>
+                            <span className="flow-text">today?</span>
                        </h2>
                     </div>
               </div>
 
-              <a className="modal-trigger waves-effect waves-light btn #ff6f00 amber darken-4" href="#modal1">My Journey to Reinvention</a>
+              <a className="modal-trigger waves-effect waves-light btn #ff6f00 amber darken-4 modalShape"
+                       href="#modal1">Response</a>
                 <div id="modal1" className="modal">
                     <div className="modal-content">
                        <h3>My Art.</h3>
